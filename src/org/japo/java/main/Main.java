@@ -15,15 +15,27 @@
  */
 package org.japo.java.main;
 
+import java.util.Random;
+
 /**
  *
  * @author Bianca Antonela Glavan - biancaantonela.glavan.alum@iescamp.es
  */
 public class Main {
+
+    public static final Random RND = new Random();
+
     public static void main(String[] args) {
-        
-    
-        
+
+        final int DADO_MIN = 1;
+        final int DADO_MAX = 6;
+
+        int dado;
+
+        dado = RND.nextInt(DADO_MAX - DADO_MIN + 1) + DADO_MIN;
+
+        System.out.println("Tirada dado.......: " + dado);
+
     }
-    
+
 }
